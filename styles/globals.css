@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button-primary {
+        @apply items-center rounded-md bg-primary-blue py-3 px-6 font-semibold text-white shadow-2xl shadow-primary-blue drop-shadow-3xl;
+    }
+
+    .button-secondary {
+        @apply items-center rounded-md bg-blue-100/30 py-4 px-7 text-base font-semibold text-primary-blue lg:text-lg;
+    }
+
+    .card-download {
+        @apply lg:rounded-xl bg-primary-blue shadow-2xl shadow-primary-blue drop-shadow-3xl;
+    }
+}
