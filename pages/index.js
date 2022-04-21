@@ -1,5 +1,4 @@
 import React from "react";
-import useEmblaCarousel from "embla-carousel-react";
 import { Menu, Transition } from "@headlessui/react";
 import Head from "next/head";
 import Image from "next/image";
@@ -36,7 +35,6 @@ import Twitter from "../public/icons/twitter.svg";
 import Facebook from "../public/icons/facebook.svg";
 
 export default function Home() {
-  const [emblaRef] = useEmblaCarousel({ loop: false });
   return (
     <div>
       <nav className="navbar container xs:container lg:mt-12 xl:container">
