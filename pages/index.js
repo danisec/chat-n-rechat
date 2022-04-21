@@ -9,7 +9,7 @@ import ArrowRight from "../public/hero/arrow-right-circle.svg";
 import Download from "../public/hero/download.svg";
 import User from "../public/hero/user.svg";
 import EmotLove from "../public/hero/emoticon-love.svg";
-import Phone from "../public/hero/phone.svg";
+import Phone from "../public/hero/phone.png";
 import Chat1 from "../public/hero/chat-1.svg";
 import Chat2 from "../public/hero/chat-2.svg";
 import Cnn from "../public/logo/cnn.svg";
