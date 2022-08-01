@@ -55,25 +55,25 @@ export default function Home() {
           <div className="hidden lg:block">
             <ul className="flex items-center justify-start gap-14">
               <li className="text-base font-semibold leading-5 text-dark-bold">
-                <Link href="/">
+                <Link href="/" passHref>
                   <a>Beranda</a>
                 </Link>
               </li>
 
               <li className="p-2 text-base font-normal leading-5 text-dark-bold hover:rounded-md hover:bg-slate-200/60 hover:p-2">
-                <Link href="/">
+                <Link href="#fiture" passHref>
                   <a>Fitur-fitur</a>
                 </Link>
               </li>
 
               <li className="p-2 text-base font-normal leading-5 text-dark-bold hover:rounded-md hover:bg-slate-200/60 hover:p-2">
-                <Link href="/">
+                <Link href="#tech" passHref>
                   <a>Teknologi</a>
                 </Link>
               </li>
 
               <li className="p-2 text-base font-normal leading-5 text-dark-bold hover:rounded-md hover:bg-slate-200/60 hover:p-2">
-                <Link href="/">
+                <Link href="#faq">
                   <a>FAQ</a>
                 </Link>
               </li>
@@ -81,9 +81,11 @@ export default function Home() {
           </div>
 
           <div className="hidden lg:block">
-            <button className="button-primary duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-primary-blue">
-              Download
-            </button>
+            <Link href="#download" passHref>
+              <button className="button-primary duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-primary-blue">
+                <a>Download</a>
+              </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -245,7 +247,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="logo container xs:container xl:container">
+      <section id="fiture" className="logo container xs:container xl:container">
         <div className="py-24">
           <div className="flex justify-center">
             <p className="text-center font-sourcesans text-xs font-semibold uppercase leading-5 text-dark-bold lg:text-sm">
@@ -332,7 +334,10 @@ export default function Home() {
         <div className="border-b-2 border-dark-bold/5"></div>
       </section>
 
-      <section className="use-tech container xs:container xl:container">
+      <section
+        id="tech"
+        className="use-tech container xs:container xl:container"
+      >
         <div className="py-6 lg:py-24">
           <div className="lg:grid lg:grid-cols-2">
             {/* Content-cols-1 */}
@@ -437,7 +442,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="download-apps container mt-16 xs:container xs:rounded-md xs:bg-primary-blue lg:mt-0 lg:bg-primary-bg-light xl:container">
+      <section
+        id="download"
+        className="download-apps container mt-16 xs:container xs:rounded-md xs:bg-primary-blue lg:mt-0 lg:bg-primary-bg-light xl:container"
+      >
         <div className="py-0 lg:py-24">
           <div className="card-download">
             <div className="grid py-10 xs:gap-10 md:grid-cols-2 lg:gap-0 lg:py-24 lg:px-20">
@@ -504,7 +512,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="faq container xs:container xl:container">
+      <section id="faq" className="faq container xs:container xl:container">
         <div className="py-24 lg:py-24">
           <div>
             <p className="text-center font-sourcesans text-sm font-semibold uppercase tracking-widest text-dark-bold">
